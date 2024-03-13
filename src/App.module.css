@@ -1,0 +1,66 @@
+:root {
+  --color-primary: #0964b0;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.formTitle span {
+  font-size: larger;
+  font-weight: 600;
+}
+.formFooter {
+  margin-top: auto;
+  display: flex;
+}
+.formFooter button {
+  margin-left: auto;
+}
+
+.visuallyHidden {
+  border-width: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+.successModal {
+  height: 140px;
+  min-height: 0;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+.successText {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #155724;
+}
+
+.errorModal {
+  min-height: 0;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+.errorText {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #4b0a11;
+  flex-direction: column;
+}
+.errorText > :last-child {
+  font-size: 18px;
+}
